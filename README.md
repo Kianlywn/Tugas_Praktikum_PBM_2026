@@ -6,25 +6,44 @@ Kelas: PBM A
 **Struktur Project**
 lib/
 ├── main.dart
+
 ├── core/
+
 │   ├── constants/
+
 │   │   └── api\_constants.dart       # Base URL \& endpoint
+
 │   └── theme/
+
 │       └── app\_theme.dart           # Dark theme, warna, font
+
 ├── data/
+
 │   ├── models/
+
 │   │   ├── user\_model.dart          # Model User, Role, Class
+
 │   │   ├── product\_model.dart       # Model Product
+
 │   │   └── auth\_response\_model.dart # Model response login
+
 │   └── services/
 │       ├── api\_service.dart         # HTTP calls (login, produk, submit)
+
 │       └── storage\_service.dart     # flutter\_secure\_storage wrapper
+
 └── presentation/
+
         └── screens/
+        
                ├── splash_screen.dart       # Cek status login
+               
                ├── login_screen.dart        # Halaman login
+               
                ├── product_list_screen.dart # Katalog produk (GET)
+               
                ├── add_product_screen.dart  # Tambah produk (POST)
+               
                └── submit_screen.dart       # Submit tugas
 
 
